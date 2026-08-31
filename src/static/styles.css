@@ -59,19 +59,112 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 8px 18px rgba(26, 35, 126, 0.08);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin: 0;
+  color: #1a237e;
+  font-size: 1.2rem;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.participants {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.participants h5 {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.participants ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 6px 10px 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.participant-name {
+  line-height: 1.2;
+}
+
+.remove-participant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.12);
+  color: #3730a3;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-participant-btn:hover {
+  background: #3730a3;
+  color: white;
+}
+
+.participant-item.empty {
+  background: #f8fafc;
+  color: #64748b;
+  border-color: #e2e8f0;
+  font-weight: 500;
 }
 
 .form-group {
